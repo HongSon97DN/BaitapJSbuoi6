@@ -70,3 +70,20 @@ function tinhGiaiThua() {
     document.getElementById("txtResult4").innerHTML = "Giai thừa của: "+ number + " là " + giaiThua;
 }
 document.getElementById("tinhGiaiThua").onclick = tinhGiaiThua;
+
+// Bài 6
+
+function taoTheDiv() {
+    var divs = document.getElementsByClassName("div");
+
+    for(var i = 0; i < divs.length; i++) {
+        if((i+1) % 2 == 0) {
+            divs[i].style.background = "red";
+            divs[i].innerHTML = "Div chẵn";
+        } else {
+            divs[i].style.background = "blue";
+            divs[i].innerHTML = "Div lẻ";
+        }
+    }
+}
+document.getElementById("taoTheDiv").onclick = taoTheDiv;
